@@ -55,3 +55,35 @@ Example
 	<bean id="address_bean" class="com.kimseak.Address" scope="prototype">
 		<property name="address" value="Wall Street 12"></property>
 	</bean>
+# Explaination
+
+	
+	/**
+	 * spring relies heavily on IoC inversion of control
+	 * 	~the spring container helps to make this inversion of control
+	 * 	create object + wire them together + manage their complete life cycle form creation to destruction 
+	 *                + use DI to manage components --> these are the spring bean !!!
+	 *  instruction + meta data (XML annotation)  ----> the container creates the full application!!!
+	 *  	
+	 *  
+	 *  	Two containers:
+	 *  		1.) Spring BeanFactory container
+	 *  		2.) Spring ApplcationContext container INTERFACE ---> basically it include all the feature of BeanFactory so this 				is standard way
+	 *  			For example: resolve textual information from  a property file + load bean + wire bean together
+	 *  				org.springframeworkcontext.ApplicationContext
+	 *  			
+	 */
+	
+	/**
+	 *  Beans --> we have define them in the XML file 
+	 *  	we can specify the scope for the bean
+	 *  
+	 *  	For example:  we want to be unique then set the scope to singleton
+	 *  		To force Spring spring to produce new bean instance each time one is needed, we should set beans's scope attribute
+	 *  		to be prototype
+	 *  		
+	 *  		singleton: single instance of the bean per container
+	 *  		prototype: there can be any number of instance in the container  
+	 *  		
+	 *  
+	 */

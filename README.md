@@ -40,10 +40,11 @@ Example
 
 
 # 1
-  <bean id="student_bean" class="com.kimseak.Student" scope="singleton" init-method="studentInit" destroy-method="studentDestory">
-		<property name="studentName" value="Joe Smith"></property>
-	</bean>
-  <bean id="student_bean" class="com.kimseak.Student" scope="prototype"></bean>  
+
+	  <bean id="student_bean" class="com.kimseak.Student" scope="singleton" init-method="studentInit" destroy-method="studentDestory">
+			<property name="studentName" value="Joe Smith"></property>
+		</bean>
+	  <bean id="student_bean" class="com.kimseak.Student" scope="prototype"></bean>  
 
 
 
